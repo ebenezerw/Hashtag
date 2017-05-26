@@ -5,9 +5,9 @@
             <%= image_tag photo.thumbnailUrl %>
             <!-- <%= photo.imageUrl %> -->
             <div class="caption">
-                <%= photo.imageOwner %>
-                <p><%= photo.dateAdded %></p>
-                <%= photo.commentCount %>
+                <h5>By: <%= photo.imageOwner %></h5>
+                <h6>Date: <%= photo.dateAdded %></h6>
+                <h6><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <%= photo.commentCount %></h6>
             </div>
         </div>
     </div>
