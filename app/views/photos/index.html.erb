@@ -1,0 +1,17 @@
+<div class="row">
+    <% @photos.each do |photo| %>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <%= image_tag photo.thumbnailUrl %>
+            <!-- <%= photo.imageUrl %> -->
+            <div class="caption">
+                <%= photo.imageOwner %>
+                <p><%= photo.dateAdded %></p>
+                <%= photo.commentCount %>
+            </div>
+        </div>
+    </div>
+
+    <% end %>
+
+</div>
